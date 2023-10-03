@@ -4,7 +4,7 @@
 
 namespace CapaDatos
 {
-    public class Connection
+    public class CD_Connection
     {
         private static string server = "localhost";
         private static string bd = "Hablemos";

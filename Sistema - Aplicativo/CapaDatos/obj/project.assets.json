@@ -542,6 +542,16 @@
         "runtime": {
           "lib/net6.0/ZstdSharp.dll": {}
         }
+      },
+      "CapaEntidad/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CapaEntidad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaEntidad.dll": {}
+        }
       }
     }
   },
@@ -1777,31 +1787,37 @@
         "zstdsharp.port.0.7.1.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "CapaEntidad/1.0.0": {
+      "type": "project",
+      "path": "../CapaEntidad/CapaEntidad.csproj",
+      "msbuildProject": "../CapaEntidad/CapaEntidad.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CapaEntidad >= 1.0.0",
       "MySql.Data >= 8.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\spaul\\.nuget\\packages\\": {},
+    "C:\\Users\\Paul Guerra\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spaul\\Documents\\GitHub\\Aplicativo\\Sistema - Aplicativo\\CapaDatos\\CapaDatos.csproj",
+      "projectUniqueName": "C:\\Users\\Paul Guerra\\Documents\\Proyecto\\Aplicativo\\Sistema - Aplicativo\\CapaDatos\\CapaDatos.csproj",
       "projectName": "CapaDatos",
-      "projectPath": "C:\\Users\\spaul\\Documents\\GitHub\\Aplicativo\\Sistema - Aplicativo\\CapaDatos\\CapaDatos.csproj",
-      "packagesPath": "C:\\Users\\spaul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spaul\\Documents\\GitHub\\Aplicativo\\Sistema - Aplicativo\\CapaDatos\\obj\\",
+      "projectPath": "C:\\Users\\Paul Guerra\\Documents\\Proyecto\\Aplicativo\\Sistema - Aplicativo\\CapaDatos\\CapaDatos.csproj",
+      "packagesPath": "C:\\Users\\Paul Guerra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Paul Guerra\\Documents\\Proyecto\\Aplicativo\\Sistema - Aplicativo\\CapaDatos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\spaul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Paul Guerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1815,7 +1831,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Paul Guerra\\Documents\\Proyecto\\Aplicativo\\Sistema - Aplicativo\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\Paul Guerra\\Documents\\Proyecto\\Aplicativo\\Sistema - Aplicativo\\CapaEntidad\\CapaEntidad.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1849,7 +1869,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
