@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,24 +16,17 @@ namespace CapaDatos
 
         public Usuario verificarAcceso(string username, string password)
         {
-            Usuario usuario = new Usuario();
+            Usuario usuario = null;
             DataTable dt = new DataTable();
-            string connectionString = "Server=tu_servidor_mysql;Database=nombre_de_tu_base_de_datos;Uid=nombre_de_usuario;Pwd=contrasenia;";
-
-            using (MySqlConnection connection = conn.establecerConexion())
-            {
-                connection.Open();
-                string query = "SELECT * FROM usuario WHERE username = @username AND pass = @password AND estado = 'A'";
-                using (MySqlCommand cmd = new MySqlCommand(query, connection))
-                {
-                    cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password);
-                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
-                    {
-                        adapter.Fill(dt);
-                    }
-                }
-            }
+            MySqlCommand cmd = new MySqlCommand();
+            MySqlDataAdapter adapter;
+            cmd.Connection = conn.establecerConexion();
+            cmd.CommandText = "SELECT * FROM usuarios WHERE cedula = @username AND pass = @password AND estado = 'A';";
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@password", password);
+            adapter = new MySqlDataAdapter(cmd);
+            adapter.Fill(dt);
+            conn.cerrarConexion();
 
             if (dt.Rows.Count > 0)
             {

@@ -5,10 +5,16 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using CapaEntidad;
+using CapaNegocio;
+using CapaPresentacion.ViewsAdmin;
+using CapaPresentacion.ViewsGestor;
+using CapaPresentacion.ViewsMostrador;
 
 
 
@@ -17,17 +23,9 @@ namespace CapaPresentacion
     public partial class Form1 : Form
     {
         private bool isPasswordVisible = false;
-        private static string[] eyeOpenPath = {
-            "C:\\Users\\spaul\\Documents\\GitHub\\Aplicativo\\Sistema - Aplicativo\\img\\eye_open.png",
-            "C:\\Users\\Paul Guerra\\Documents\\Proyecto\\Aplicativo\\Sistema - Aplicativo\\img\\eye_open.png" };
-
-        private static string[] eyeClosedPath = {
-            "C:\\Users\\spaul\\Documents\\GitHub\\Aplicativo\\Sistema - Aplicativo\\img\\eye_closed.png",
-            "C:\\Users\\Paul Guerra\\Documents\\Proyecto\\Aplicativo\\Sistema - Aplicativo\\img\\eye_closed.png" };
-
-        private string ruta = eyeClosedPath[1];
-        private string ruta2 = eyeOpenPath[1];
-
+        private static string eyeOpenPath = Path.Combine(Application.StartupPath, "img", "eye_open.png");
+        private static string eyeClosedPath = Path.Combine(Application.StartupPath, "img", "eye_closed.png");
+        CN_Login neg = new CN_Login();
 
         public Form1()
         {
@@ -37,13 +35,11 @@ namespace CapaPresentacion
             panelLine_Down.BackColor = Color.FromArgb(21, 191, 168);
             btnIngresar.BackColor = Color.FromArgb(163, 112, 240);
             txtPass.UseSystemPasswordChar = true;
-            if (File.Exists(ruta))
+            if (File.Exists(eyeClosedPath))
             {
-                pictureBox3.Image = Image.FromFile(ruta);
+                pictureBox3.Image = Image.FromFile(eyeClosedPath);
 
             }
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -71,12 +67,13 @@ namespace CapaPresentacion
             isPasswordVisible = !isPasswordVisible;
             txtPass.UseSystemPasswordChar = !isPasswordVisible;
 
-            if(isPasswordVisible)
+            if (isPasswordVisible)
             {
-                pictureBox3.Image = Image.FromFile(ruta2);
+                pictureBox3.Image = Image.FromFile(eyeOpenPath);
             }
-            else {
-                pictureBox3.Image = Image.FromFile(ruta);
+            else
+            {
+                pictureBox3.Image = Image.FromFile(eyeClosedPath);
             }
         }
 
@@ -92,8 +89,46 @@ namespace CapaPresentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text != "" || txtPass.Text != "")
+            if(txtUser.Text != "" || txtPass.Text != "")
             {
+                Usuario usuario = neg.Login(txtUser.Text, txtPass.Text);
+                if(usuario != null)
+                {
+                    int perfil = usuario.rol;
+                    abrirForm(perfil).Show();
+                    this.Hide();
+                }
+                else
+                {
+                    txtUser.Clear();
+                    txtPass.Clear();
+                    MessageBox.Show("El usuario no se encuentra");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Existen Campos Vacios");
+            }
+
+        }
+
+
+        private Form abrirForm(int perfil)
+        {
+            switch (perfil)
+            {
+                case 1:
+                    return new HomeAdmin();
+                    break;
+                case 2:
+                    return new HomeGestor();
+                    break;
+                case 3:
+                    return new HomeMostrador();
+                    break;
+                default:
+                    throw new ArgumentException("Perfil No encontrado");
             }
         }
     }

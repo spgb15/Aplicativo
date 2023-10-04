@@ -1,0 +1,9 @@
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\obj\Debug\net472\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\obj\Debug\net472\CapaEntidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\obj\Debug\net472\CapaEntidad.AssemblyInfoInputs.cache
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\obj\Debug\net472\CapaEntidad.AssemblyInfo.cs
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\obj\Debug\net472\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\bin\Debug\net472\CapaEntidad.dll
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\bin\Debug\net472\CapaEntidad.pdb
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\obj\Debug\net472\CapaEntidad.dll
+C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaEntidad\obj\Debug\net472\CapaEntidad.pdb

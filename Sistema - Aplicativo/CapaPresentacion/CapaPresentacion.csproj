@@ -73,6 +73,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewsAdmin\HomeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdmin\HomeAdmin.Designer.cs">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsGestor\HomeGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsGestor\HomeGestor.Designer.cs">
+      <DependentUpon>HomeGestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsMostrador\HomeMostrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsMostrador\HomeMostrador.Designer.cs">
+      <DependentUpon>HomeMostrador.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,12 +118,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
-      <Project>{87c2eae5-da0f-4c47-babd-7c7ba1eab317}</Project>
-      <Name>CapaNegocio</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
@@ -117,5 +129,16 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{8b0c9195-02de-4bd1-8856-e46616767ba8}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{87c2eae5-da0f-4c47-babd-7c7ba1eab317}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
