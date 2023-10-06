@@ -26,3 +26,31 @@ C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\De
 C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.csproj.CopyComplete
 C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.dll
 C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\CapaDatos.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\CapaDatos.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\Google.Protobuf.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\K4os.Compression.LZ4.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\K4os.Compression.LZ4.Streams.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\K4os.Hash.xxHash.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\MySql.Data.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\BouncyCastle.Crypto.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\System.Buffers.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\System.Configuration.ConfigurationManager.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\System.IO.Pipelines.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\System.Memory.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\System.Numerics.Vectors.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\System.Threading.Tasks.Extensions.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\ZstdSharp.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\CapaEntidad.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\bin\Debug\net472\CapaEntidad.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.AssemblyInfoInputs.cache
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.AssemblyInfo.cs
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.csproj.CopyComplete
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaDatos\obj\Debug\net472\CapaDatos.pdb

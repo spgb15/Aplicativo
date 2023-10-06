@@ -17,6 +17,10 @@ namespace CapaPresentacion.ViewsAdmin
         {
             InitializeComponent();
             this.FormClosing += HomeAdmin_FormClosing;
+            this.MaximizeBox = false;
+            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void HomeAdmin_FormClosing(object sender, FormClosingEventArgs e)

@@ -40,12 +40,84 @@ namespace CapaPresentacion
                 pictureBox3.Image = Image.FromFile(eyeClosedPath);
 
             }
+            this.AcceptButton = btnIngresar;
+            this.Load += Form1_Load;
+            this.Shown += Form1_Shown;
+            txtUser.Enter += txtUser_Enter;
+            txtUser.Leave += txtUser_Leave;
+
+            txtPass.Enter += txtPass_Enter;
+            txtPass.Leave += txtPass_Leave;
+
+            txtUser.TabIndex = 0;
+            txtPass.TabIndex = 1;
+            btnIngresar.TabIndex = 2;
+
+            txtUser.KeyPress += TextBox_KeyPress;
+            txtPass.KeyPress += TextBox_KeyPress;
+            btnIngresar.KeyDown += Control_KeyDown;
+
+       }
+
+
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Si se presiona la tecla Tab, cambia el foco al siguiente control en el orden de tabulación
+            if (e.KeyChar == (char)Keys.Tab)
+            {
+                Control nextControl = GetNextControl((Control)sender, true);
+                if (nextControl != null)
+                {
+                    nextControl.Focus();
+                    e.Handled = true; // Evita que el carácter de tabulación se agregue al TextBox
+                }
+            }
+        }
+
+        private void Control_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Si se presiona la tecla Tab, cambia el foco al siguiente control en el orden de tabulación
+            if (e.KeyCode == Keys.Tab)
+            {
+                Control nextControl = GetNextControl((Control)sender, true);
+                if (nextControl != null)
+                {
+                    nextControl.Focus();
+                    e.Handled = true; // Evita que se procese la tecla Tab por defecto
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            txtUser.Focus();
+        }
+
+        private void txtUser_Enter(object sender, EventArgs e)
+        {
+            panelLine_up.BackColor = Color.FromArgb(94, 161, 248);
+        }
+
+        private void txtUser_Leave(object sender, EventArgs e)
+        {
+            panelLine_up.BackColor = Color.FromArgb(21, 191, 168);
 
         }
+
+        private void txtPass_Enter(object sender, EventArgs e)
+        {
+            panelLine_Down.BackColor = Color.FromArgb(94, 161, 248);
+        }
+        
+        private void txtPass_Leave(object sender, EventArgs e)
+        {
+            panelLine_Down.BackColor = Color.FromArgb(21, 191, 168);
+        }
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -120,13 +192,10 @@ namespace CapaPresentacion
             {
                 case 1:
                     return new HomeAdmin();
-                    break;
                 case 2:
                     return new HomeGestor();
-                    break;
                 case 3:
                     return new HomeMostrador();
-                    break;
                 default:
                     throw new ArgumentException("Perfil No encontrado");
             }
