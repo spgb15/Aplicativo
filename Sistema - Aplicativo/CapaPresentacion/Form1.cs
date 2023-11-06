@@ -168,7 +168,9 @@ namespace CapaPresentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if(txtUser.Text != "" || txtPass.Text != "")
+            bool isValidId = neg.validacion(txtUser.Text);
+
+            if(txtUser.Text != "" && isValidId == true || txtPass.Text != "")
             {
                 Usuario usuario = neg.Login(txtUser.Text, txtPass.Text);
                 if(usuario != null)
