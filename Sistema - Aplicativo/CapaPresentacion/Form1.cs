@@ -57,7 +57,7 @@ namespace CapaPresentacion
             txtPass.KeyPress += TextBox_KeyPress;
             btnIngresar.KeyDown += Control_KeyDown;
 
-       }
+        }
 
 
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -136,6 +136,12 @@ namespace CapaPresentacion
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            verPass();
+
+        }
+
+        private bool verPass()
+        {
             isPasswordVisible = !isPasswordVisible;
             txtPass.UseSystemPasswordChar = !isPasswordVisible;
 
@@ -147,6 +153,7 @@ namespace CapaPresentacion
             {
                 pictureBox3.Image = Image.FromFile(eyeClosedPath);
             }
+            return isPasswordVisible;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -176,15 +183,12 @@ namespace CapaPresentacion
                     txtPass.Clear();
                     MessageBox.Show("El usuario no se encuentra");
                 }
-
             }
             else
             {
                 MessageBox.Show("Existen Campos Vacios");
             }
-
         }
-
 
         private Form abrirForm(int perfil)
         {
