@@ -15,15 +15,6 @@ namespace CapaPresentacion.ViewsMostrador
         public HomeMostrador()
         {
             InitializeComponent();
-            this.MaximizeBox = false;
-            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
-            this.WindowState = FormWindowState.Maximized;
-
-        }
-
-        private void panelMenuLeft_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

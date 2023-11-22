@@ -107,9 +107,6 @@
     <EmbeddedResource Include="ViewsAdmin\HomeAdmin.resx">
       <DependentUpon>HomeAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewsMostrador\HomeMostrador.resx">
-      <DependentUpon>HomeMostrador.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
