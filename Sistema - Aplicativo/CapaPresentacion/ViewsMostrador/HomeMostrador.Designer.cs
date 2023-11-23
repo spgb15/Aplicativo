@@ -48,13 +48,14 @@ namespace CapaPresentacion.ViewsMostrador
             this.btnDashboard = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconActive = new FontAwesome.Sharp.IconPictureBox();
+            this.Title = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconActive)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -315,25 +316,35 @@ namespace CapaPresentacion.ViewsMostrador
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.iconPictureBox1);
+            this.panel3.Controls.Add(this.Title);
+            this.panel3.Controls.Add(this.iconActive);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(316, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(748, 62);
             this.panel3.TabIndex = 1;
             // 
-            // iconPictureBox1
+            // iconActive
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(18, 12);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox1.TabIndex = 0;
-            this.iconPictureBox1.TabStop = false;
+            this.iconActive.BackColor = System.Drawing.SystemColors.Control;
+            this.iconActive.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconActive.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconActive.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconActive.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconActive.Location = new System.Drawing.Point(18, 12);
+            this.iconActive.Name = "iconActive";
+            this.iconActive.Size = new System.Drawing.Size(32, 32);
+            this.iconActive.TabIndex = 0;
+            this.iconActive.TabStop = false;
+            // 
+            // Title
+            // 
+            this.Title.AutoSize = true;
+            this.Title.Location = new System.Drawing.Point(56, 21);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(33, 13);
+            this.Title.TabIndex = 1;
+            this.Title.Text = "Titulo";
             // 
             // HomeMostrador
             // 
@@ -351,7 +362,8 @@ namespace CapaPresentacion.ViewsMostrador
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconActive)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -374,6 +386,7 @@ namespace CapaPresentacion.ViewsMostrador
         private FontAwesome.Sharp.IconButton btnLogOut;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNombre;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox iconActive;
+        private System.Windows.Forms.Label Title;
     }
 }
