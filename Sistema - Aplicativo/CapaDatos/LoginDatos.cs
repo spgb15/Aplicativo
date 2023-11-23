@@ -56,7 +56,9 @@ namespace CapaDatos
                 {
                     cedula = row["cedula"].ToString(),
                     nombre = row["nombre"].ToString(),
-                    rol = Convert.ToInt32(row["rol"])
+                    rol = Convert.ToInt32(row["rol"]),
+                    email = row["email"].ToString()
+
                 };
                 return usuario;
             }
