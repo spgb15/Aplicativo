@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    internal class CD_ManageData
+    public class CD_ManageData
     {
+
     }
 }

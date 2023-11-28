@@ -14,7 +14,6 @@ namespace CapaPresentacion.ViewsMostrador
 {
     public partial class HomeMostrador : Form
     {
-        private Usuario user = new Usuario();
         public HomeMostrador()
         {
             InitializeComponent();
@@ -29,10 +28,14 @@ namespace CapaPresentacion.ViewsMostrador
             redondearBoton(btnReports);
             redondearBoton(btnLogOut);
             redondearBoton(btnHelp);
-            lblNombre.Text = user.nombre;
-            lblEmail.Text = user.email;
-            Console.WriteLine(user.nombre + " " + user.email + " " + " Hola");
+            lblNombre.Text = Datos.nombre;
+            lblEmail.Text = Datos.correo;
+            this.FormClosing += HomeMostrador_FormClosing;
+        }
 
+        private void HomeMostrador_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -57,6 +60,16 @@ namespace CapaPresentacion.ViewsMostrador
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnClosed_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

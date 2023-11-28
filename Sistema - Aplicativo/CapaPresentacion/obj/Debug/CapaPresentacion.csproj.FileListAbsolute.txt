@@ -66,3 +66,5 @@ C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaPres
 C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdmin.HomeAdmin.resources
 C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsMostrador.HomeMostrador.resources
 C:\Users\spaul\Documents\GitHub\Aplicativo\Sistema - Aplicativo\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Paul Guerra\Documents\Proyecto\Aplicativo\Sistema - Aplicativo\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsMostrador.HomeMostrador.resources

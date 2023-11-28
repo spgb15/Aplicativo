@@ -27,6 +27,9 @@ namespace CapaPresentacion
         private static string eyeClosedPath = Path.Combine(Application.StartupPath, "img", "eye_closed.png");
         CN_Login neg = new CN_Login();
 
+        private string nombre;
+        private string correo;
+
         public Form1()
         {
             InitializeComponent();
@@ -56,6 +59,7 @@ namespace CapaPresentacion
             txtUser.KeyPress += TextBox_KeyPress;
             txtPass.KeyPress += TextBox_KeyPress;
             btnIngresar.KeyDown += Control_KeyDown;
+
 
         }
 
@@ -176,6 +180,8 @@ namespace CapaPresentacion
                 if(usuario != null)
                 {
                     int perfil = usuario.rol;
+                    Datos.nombre = usuario.nombre;
+                    Datos.correo = usuario.email;
                     abrirForm(perfil).Show();
                     this.Hide();
                 }

@@ -58,7 +58,6 @@ namespace CapaDatos
                     nombre = row["nombre"].ToString(),
                     rol = Convert.ToInt32(row["rol"]),
                     email = row["email"].ToString()
-
                 };
                 return usuario;
             }

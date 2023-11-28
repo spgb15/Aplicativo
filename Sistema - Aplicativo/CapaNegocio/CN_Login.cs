@@ -12,6 +12,8 @@ namespace CapaNegocio
             return datos.verificarAcceso(username, password);
         }
 
+        
+
         public bool validacion(string input)
         {
             if (input.Length != 10)
